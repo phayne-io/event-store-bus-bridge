@@ -1,6 +1,6 @@
 {
-  "name": "phayne-io/composer-template",
-  "description": "Composer package template",
+  "name": "phayne-io/event-store-bus-bridge",
+  "description": "event-store-bus-bridge",
   "minimum-stability": "stable",
   "license": "proprietary",
   "authors": [
@@ -10,10 +10,10 @@
     }
   ],
   "support": {
-    "source": "https://github.com/phayne-io/composer-template",
-    "issues": "https://github.com/phayne-io/composer-template/issues",
-    "rss": "https://github.com/phayne-io/composer-template/releases.atom",
-    "wiki": "https://github.com/phayne-io/composer-template/wiki"
+    "source": "https://github.com/phayne-io/event-store-bus-bridge",
+    "issues": "https://github.com/phayne-io/event-store-bus-bridge/issues",
+    "rss": "https://github.com/phayne-io/event-store-bus-bridge/releases.atom",
+    "wiki": "https://github.com/phayne-io/event-store-bus-bridge/wiki"
   },
   "require": {
     "php": "^8.2",
@@ -29,12 +29,12 @@
   },
   "autoload": {
     "psr-4": {
-      "Phayne\\Template\\": "src/"
+      "Phayne\\EventStoreBusBridge\\": "src/"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "PhayneTest\\Template\\": "test/"
+      "PhayneTest\\EventStoreBusBridge\\": "test/"
     }
   },
   "scripts": {
@@ -42,8 +42,7 @@
     "test-clover": "XDEBUG_MODE=coverage phpunit --colors=always -vvv --coverage-clover build/logs/clover.xml",
     "static": "./vendor/bin/psalm --config=psalm.xml",
     "style": "./vendor/bin/phpcs",
-    "test": ["@test-html", "@static", "@style"],
-    "post-create-project-cmd": "php setup.php"
+    "test": ["@test-html", "@static", "@style"]
   },
   "extra": {
     "branch-alias": {

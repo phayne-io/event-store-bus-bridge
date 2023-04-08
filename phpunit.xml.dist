@@ -10,7 +10,7 @@
         </include>
     </coverage>
     <testsuites>
-        <testsuite name="PhayneTest\Template">
+        <testsuite name="PhayneTest\EventStoreBusBridge">
             <directory>./test</directory>
         </testsuite>
     </testsuites>

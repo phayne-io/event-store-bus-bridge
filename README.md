@@ -1,2 +1,2 @@
-# composer-template
-A simple Composer template ready to be used for new awesome Phayne PHP packages. :elephant: :package:
+# Phayne Event Store Bus Bridge
+Marry CQRS with Event Sourcing
